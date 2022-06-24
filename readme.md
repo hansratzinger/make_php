@@ -2,6 +2,8 @@
 
 ## Debuging in Visual Studio Code (VSC)
 
+### ***Die nachstehende Prozedur MUSS für jede installierte php-Version getrennt gemacht werden! ***
+
 - In VSC die Extension PHP Debug installieren
 - phpinfo.php Datei erstellen:
 
