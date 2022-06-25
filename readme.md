@@ -2,9 +2,7 @@
 
 ## Debuging mit XDebug in Visual Studio Code (VSC) und Laragon
 
-#### *!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!*
-
-- In VSC die Extension PHP Debug installieren
+- In VSC die Extension *PHP Debug* installieren
 - phpinfo.php Datei erstellen:
 
     ```
@@ -64,4 +62,6 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 - mit den Buttons oben kann dann in Einzelschritten oder Programmweise weitergesprungen werden.
 - der Variableninhalt wird in der linken Spalte angezeigt
 
-letzte Änderung HR 2022-06-25  09:24 NK
+**!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!**
+
+letzte Änderung HR 2022-06-25  🕞 NK
