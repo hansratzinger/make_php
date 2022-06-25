@@ -21,7 +21,8 @@
 Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and rename it to php_xdebug.dll<br>
 (Falls ein anderer Web-Server verwendet wird, ist der Pfad entsprechend zu ändern)
 
-- Wichtig! Damit XDebug in VSC funktioniert ist der von XDebug.org/Wizard Code folgendermaßen zu ergänzen:
+- Wichtig! Damit XDebug in VSC funktioniert ist der Punkt 3 folgendermaßen zu ergänzen:<br>
+*Update C:\laragon\bin\php\die_jeweilige_Version\php.ini and add the line:*
     ```
     xdebug.mode = debug 
     xdebug.start_with_request=yes  
@@ -63,4 +64,4 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 - mit den Buttons oben kann dann in Einzelschritten oder Programmweise weitergesprungen werden.
 - der Variableninhalt wird in der linken Spalte angezeigt
 
-letzte Änderung HR 2022-06-25  09:06 NK
+letzte Änderung HR 2022-06-25  09:24 NK
