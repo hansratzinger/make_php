@@ -1,6 +1,15 @@
-# PHP Erfahrungen
+# Debuging mit XDebug in Visual Studio Code (VSC) und Laragon
 
-## Debuging mit XDebug in Visual Studio Code (VSC) und Laragon
+Ich programmiere seit 7 Jahren in PHP als Autodidakt. Nach langem Suchen und vielen Irrwegen habe ich endlich die richtige Methode gefunden um die wunderbaren Vorzüge von **XDebug und Visual Studio Code** zu nutzen. Da es zu diesem Thema eine Vielzahl von irreführenden Infos im Web gibt, stelle ich hier den Weg vor, der bei mir funktioniert.
+
+### meine Programmierumgebung
+
+- Win 10
+- Laragon WAMP Server (Apache, PHPMySqlAdmin)
+- Visual Studio Code
+- XDebug
+
+### Setup
 
 - In VSC die Extension *PHP Debug* installieren
 - phpinfo.php Datei erstellen:
@@ -31,8 +40,6 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
     zend_extension = xdebug
     ```
 
-- Xdebug-helper in Firefox/Erweiterungen installieren.
-
 - den Webserver auf localhost neu starten
 
 - In VSC auf Debugging klicken (Dreieck mit Käfer)
@@ -60,8 +67,37 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 - im Browser die Appikation bzw. Datei aufrufen die getestet werden soll
 - wenn der Breakpoint in der zu untersuchenden Datei erreicht wurde bleibt der Debugger dort stehen.
 - mit den Buttons oben kann dann in Einzelschritten oder Programmweise weitergesprungen werden.
-- der Variableninhalt wird in der linken Spalte angezeigt
 
-**!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!**
 
-letzte Änderung HR 2022-06-25 10:00 NK
+### Debug-Menü in VSC
+
+#### Variablen
+    
+Der aktuelle Inhalt der Variablen und Konstanten:
+-   local (die $Variablen des Scripts
+-   Supgerglobals ($_SESSION, $_GET, $_Post, $_SERVER, usw.)
+-   User defined constants (die im Script definierten Konstanten)
+    
+#### Überwachen
+
+Variablen die im aktellen Debugging relevant sind, können hier mit + hinzugefügt werden. Bei vielen Variablen bietet das eine besere Übersichtlichkeit.
+    
+#### Aufrufliste
+
+{main} - das in der URL aufgerufene Script
+require - die durch *require* aufgerufenen includes.
+
+Rechts wird die jeweilige Statement-Nummer angezeigt, bei der angehalten wurde
+    
+#### Haltepunkte
+
+-   alle gesetzten Haltpunkte können durch anhaken aktiviert/deaktiviert werden
+-   zusätzlich kann auch beim Auftreten von Notices, Warnings, Errors oder Execptions angehalten werden
+    
+### Nützliche Infos
+
+- Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !
+- Das Script kann im lokalen LAN auch von anderen Devices zum Testen aufgerufen werden. Das Debugging läuft am immer am Entwicklungsrechner. Es kann daher mit verschiedenen Endgeräten getestet werden.
+    
+    
+letzte Änderung HR 2022-06-25 12:45 NK
