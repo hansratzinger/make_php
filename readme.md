@@ -38,18 +38,21 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 
 - In VSC auf Debugging klicken (Dreieck mit Käfer)
 
-- auf Zahnrad klicken (launch.json öffnen) und folgenden JSON Code einfügen:
+- auf Zahnrad klicken (launch.json öffnen), folgenden JSON Code einfügen und die Datei sichern:
 
 ```
+{
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
             "port": 9003
-        },
-
+        }
+    ]
+}
 ```
 
 - die zu debuggende Datei in VSC öffnen und links aussen neben der Zeilennummer durch Anklicken Breakpoints setzen. Das ist ein roter Punkt bei dem der Debugger stehen bleibt.
@@ -60,4 +63,4 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 - mit den Buttons oben kann dann in Einzelschritten oder Programmweise weitergesprungen werden.
 - der Variableninhalt wird in der linken Spalte angezeigt
 
-letzte Änderung HR 2022-06-25  08:55 NK
+letzte Änderung HR 2022-06-25  09:06 NK
