@@ -64,4 +64,4 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 
 **!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!**
 
-letzte Änderung HR 2022-06-25 09:56 NK
+letzte Änderung HR 2022-06-25 10:00 NK
