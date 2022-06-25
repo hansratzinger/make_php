@@ -17,7 +17,8 @@
 
 - [Installation Wizard](https://xdebug.org/wizard) aufrufen und kopierte Ausgabe von phpinfo in das Eingabefeld des Wizards einfügen und absenden.
 
-- Die dann angezeigten Instruktionen ausführen.
+- Die dann angezeigten Instruktionen ausführen. Im Punkt 2 sollte es heissen:<br>
+Move the downloaded file to C:\laragon\bin\php\die_jeweilige_Version\ext and rename it to php_xdebug.dll
 
 - Xdebug-helper in Firefox/Erweiterungen installieren.
 
