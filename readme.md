@@ -39,6 +39,7 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 - In VSC auf Debugging klicken (Dreieck mit Käfer)
 
 - auf Zahnrad klicken (launch.json öffnen) und folgenden JSON Code einfügen:
+
 ```
     "version": "0.2.0",
     "configurations": [
