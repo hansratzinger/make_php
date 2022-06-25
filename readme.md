@@ -22,16 +22,16 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 (Falls ein anderer Web-Server verwendet wird, ist der Pfad entsprechend zu ändern)
 
 - Wichtig! Damit XDebug in VSC funktioniert ist der von XDebug.org/Wizard Code folgendermaßen zu ergänzen:
-````
-xdebug.mode = debug 
-xdebug.start_with_request=yes  
-xdebug.idekey = VSCODE
-xdebug.log="C:\laragon\tmp\xdebug.log"
-xdebug.cli_color = 1
 
-zend_extension = xdebug
-````
+    ```
+    xdebug.mode = debug 
+    xdebug.start_with_request=yes  
+    xdebug.idekey = VSCODE
+    xdebug.log="C:\laragon\tmp\xdebug.log"
+    xdebug.cli_color = 1
 
+    zend_extension = xdebug
+    ```
 
 - Xdebug-helper in Firefox/Erweiterungen installieren.
 
