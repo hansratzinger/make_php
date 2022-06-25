@@ -31,8 +31,6 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
     zend_extension = xdebug
     ```
 
-- Webserver neu starten
-
 - Xdebug-helper in Firefox/Erweiterungen installieren.
 
 - den Webserver auf localhost neu starten
