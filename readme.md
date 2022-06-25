@@ -31,6 +31,8 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
     zend_extension = xdebug
     ```
 
+- Webserver neu starten
+
 - Xdebug-helper in Firefox/Erweiterungen installieren.
 
 - den Webserver auf localhost neu starten
@@ -64,4 +66,4 @@ Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and
 
 **!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!**
 
-letzte Änderung HR 2022-06-25  🕞 NK
+letzte Änderung HR 2022-06-25 09:56 NK
