@@ -1,8 +1,8 @@
 # PHP Erfahrungen
 
-## Debuging in Visual Studio Code (VSC)
+## Debuging mit XDebug in Visual Studio Code (VSC) und Laragon
 
-### *!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!*
+#### *!!! Wenn mehrere PHP-Versionen installiert sind, muss in jeder einzelnen Version die entsprechende Anpassung vorgenommen werden !!!*
 
 - In VSC die Extension PHP Debug installieren
 - phpinfo.php Datei erstellen:
@@ -18,7 +18,20 @@
 - [Installation Wizard](https://xdebug.org/wizard) aufrufen und kopierte Ausgabe von phpinfo in das Eingabefeld des Wizards einfügen und absenden.
 
 - Die dann angezeigten Instruktionen ausführen. Im Punkt 2 sollte es heissen:<br>
-Move the downloaded file to C:\laragon\bin\php\die_jeweilige_Version\ext and rename it to php_xdebug.dll
+Move the downloaded file to **C:\laragon\bin\php\die_jeweilige_Version\ext** and rename it to php_xdebug.dll<br>
+(Falls ein anderer Web-Server verwendet wird, ist der Pfad entsprechend zu ändern)
+
+- Wichtig! Damit XDebug in VSC funktioniert ist der von XDebug.org/Wizard Code folgendermaßen zu ergänzen:
+````
+xdebug.mode = debug 
+xdebug.start_with_request=yes  
+xdebug.idekey = VSCODE
+xdebug.log="C:\laragon\tmp\xdebug.log"
+xdebug.cli_color = 1
+
+zend_extension = xdebug
+````
+
 
 - Xdebug-helper in Firefox/Erweiterungen installieren.
 
@@ -48,4 +61,4 @@ Move the downloaded file to C:\laragon\bin\php\die_jeweilige_Version\ext and ren
 - mit den Buttons oben kann dann in Einzelschritten oder Programmweise weitergesprungen werden.
 - der Variableninhalt wird in der linken Spalte angezeigt
 
-HR 2022-06-14  21:17 NK
+letzte Änderung HR 2022-06-25  08:45 NK
