@@ -2,7 +2,7 @@
 
 ### Update 23.04.2023 HR
 
-Wenn während des Debuggings in VSC zugleich PHPMySqlAdmin geöffnet war trat mehrmals ein schwerer Fehler in PHPMySqlAdmin auf (webmozzart). Ich habe daher auf meinem RasperryPi4 innerhalb einer auf [DietPi](https://dietpi.com/#features) laufenden Dockerumgebung den mySQLServer installiert und frage diesen mittels [DBeaver](https://dbeaver.io/) auf dem PC die Datenbank ab. [mehr Info](https://hansratzinger.github.io/smartmeter-docker/)
+Wenn während des Debuggings in VSC zugleich PHPMySqlAdmin geöffnet war trat mehrmals ein schwerer Fehler in PHPMySqlAdmin auf (webmozzart). Ich habe daher auf meinem RasperryPi4 innerhalb einer auf [DietPi](https://dietpi.com/#features) laufenden Dockerumgebung den mySQLServer installiert und frage die Datenbank mittels [DBeaver](https://dbeaver.io/) ab. Dadurch läuft nur die php-Instanz des zu testenden Programmes auf dem PC. [Mehr Infos](https://hansratzinger.github.io/smartmeter-docker/)
 
 
 Ich programmiere seit Jahren in PHP als Autodidakt. Nach langem Suchen und vielen Irrwegen habe ich endlich die richtige Methode gefunden um die wunderbaren Vorzüge von **XDebug und Visual Studio Code** zu nutzen. Da es zu diesem Thema eine Vielzahl von irreführenden Infos im Web gibt, stelle ich hier den Weg vor, der bei mir funktioniert.
